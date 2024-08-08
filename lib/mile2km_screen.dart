@@ -25,6 +25,7 @@ class _ConversionScreenState extends State<ConversionScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 215, 245, 209),
       appBar: buildAppBar('Birim Dönüştürücü'),
       body: Padding(
         padding: const EdgeInsets.all(15.0),

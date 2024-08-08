@@ -30,6 +30,7 @@ class _WeightConversionScreenState extends State<WeightConversionScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 215, 245, 209),
       appBar: buildAppBar('Ağırlık Dönüştürücü'),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

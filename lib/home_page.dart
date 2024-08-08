@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'mile2km_screen.dart';
 import 'app_bar.dart';
-import 'weight_conversion_screen.dart';
+import 'pound2kg_screen.dart'; // Dosya adını burada güncelledik
 import 'gallon2liter_screen.dart';
 
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 215, 245, 209),
       appBar: buildAppBar('Ana Sayfa'),
       body: Center(
         child: Column(
@@ -15,8 +16,13 @@ class HomePage extends StatelessWidget {
           children: [
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color.fromARGB(255, 117, 190, 226),
+                backgroundColor: Color.fromARGB(255, 5, 133, 47),
                 foregroundColor: Colors.white,
+                minimumSize: Size(250, 50), // Boyutu burada ayarlayın
+                shape: RoundedRectangleBorder(
+                  borderRadius:
+                      BorderRadius.circular(8), // Yuvarlaklığı burada ayarlayın
+                ),
               ),
               onPressed: () {
                 Navigator.push(
@@ -24,39 +30,66 @@ class HomePage extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => ConversionScreen()),
                 );
               },
-              child: Text('Uzaklık Dönüştürme'),
+              child: Text(
+                'Uzaklık Dönüştürme',
+                style: TextStyle(
+                  fontSize: 18, // Yazı boyutunu burada ayarlayın
+                ),
+              ),
             ),
-            SizedBox(height: 18),
+            SizedBox(height: 30),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color.fromARGB(255, 117, 190, 226),
+                backgroundColor: Color.fromARGB(255, 5, 133, 47),
                 foregroundColor: Colors.white,
+                minimumSize: Size(250, 50), // Boyutu burada ayarlayın
+                shape: RoundedRectangleBorder(
+                  borderRadius:
+                      BorderRadius.circular(8), // Yuvarlaklığı burada ayarlayın
+                ),
               ),
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => WeightConversionScreen()),
+                      builder: (context) =>
+                          VolumeConversionScreen()), // Sınıf adını burada güncelledik
                 );
               },
-              child: Text('Ağırlık Dönüştürme'),
+              child: Text(
+                'Ağırlık Dönüştürme',
+                style: TextStyle(
+                  fontSize: 18, // Yazı boyutunu burada ayarlayın
+                ),
+              ),
             ),
-            SizedBox(height: 18),
+            SizedBox(height: 30),
 
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color.fromARGB(255, 117, 190, 226),
+                backgroundColor: Color.fromARGB(255, 5, 133, 47),
                 foregroundColor: Colors.white,
+                minimumSize: Size(250, 50), // Boyutu burada ayarlayın
+                shape: RoundedRectangleBorder(
+                  borderRadius:
+                      BorderRadius.circular(8), // Yuvarlaklığı burada ayarlayın
+                ),
               ),
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => VolumeConversionScreen()),
+                    builder: (context) => VolumeConversionScreen(),
+                  ),
                 );
               },
-              child: Text('Hacim Dönüştürme'),
-            )
+              child: Text(
+                'Hacim Dönüştürme',
+                style: TextStyle(
+                  fontSize: 18, // Yazı boyutunu burada ayarlayın
+                ),
+              ),
+            ),
             // Diğer dönüştürme butonlarını buraya ekleyebilirsiniz.
           ],
         ),
