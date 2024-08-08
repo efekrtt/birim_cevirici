@@ -53,7 +53,7 @@ class HomePage extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                       builder: (context) =>
-                          VolumeConversionScreen()), // Sınıf adını burada güncelledik
+                          WeightConversionScreen()), // Sınıf adını burada güncelledik
                 );
               },
               child: Text(
@@ -79,8 +79,7 @@ class HomePage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => VolumeConversionScreen(),
-                  ),
+                      builder: (context) => VolumeConversionScreen()),
                 );
               },
               child: Text(
