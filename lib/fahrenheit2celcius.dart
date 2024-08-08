@@ -33,6 +33,7 @@ class _TemperatureConversionScreenState
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
+            SizedBox(height: 20.0),
             TextField(
               controller: _celsiusController,
               keyboardType: TextInputType.number,
@@ -43,7 +44,7 @@ class _TemperatureConversionScreenState
                 _convertCelsius();
               },
             ),
-            SizedBox(height: 16.0),
+            SizedBox(height: 30.0),
             TextField(
               controller: _fahrenheitController,
               keyboardType: TextInputType.number,

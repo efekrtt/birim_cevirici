@@ -36,6 +36,7 @@ class _WeightConversionScreenState extends State<WeightConversionScreen> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
+            SizedBox(height: 20.0),
             TextField(
               controller: _poundController,
               keyboardType: TextInputType.number,
@@ -46,7 +47,7 @@ class _WeightConversionScreenState extends State<WeightConversionScreen> {
                 _convertPound();
               },
             ),
-            SizedBox(height: 16.0),
+            SizedBox(height: 30.0),
             TextField(
               controller: _kgController,
               keyboardType: TextInputType.number,

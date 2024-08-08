@@ -65,6 +65,7 @@ class _VolumeConversionScreenState extends State<VolumeConversionScreen> {
         padding: const EdgeInsets.all(15.0),
         child: Column(
           children: [
+            SizedBox(height: 20.0),
             TextField(
               controller: _literController,
               keyboardType: TextInputType.number,
@@ -75,7 +76,7 @@ class _VolumeConversionScreenState extends State<VolumeConversionScreen> {
                 _convertLiterToOthers();
               },
             ),
-            SizedBox(height: 20.0),
+            SizedBox(height: 25.0),
             TextField(
               controller: _mlController,
               keyboardType: TextInputType.number,
@@ -86,7 +87,7 @@ class _VolumeConversionScreenState extends State<VolumeConversionScreen> {
                 _convertMlToOthers();
               },
             ),
-            SizedBox(height: 20.0),
+            SizedBox(height: 25.0),
             TextField(
               controller: _gallonController,
               keyboardType: TextInputType.number,
@@ -97,7 +98,7 @@ class _VolumeConversionScreenState extends State<VolumeConversionScreen> {
                 _convertGallonToOthers();
               },
             ),
-            SizedBox(height: 20.0),
+            SizedBox(height: 25.0),
             TextField(
               controller: _ozController,
               keyboardType: TextInputType.number,

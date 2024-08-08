@@ -31,6 +31,7 @@ class _ConversionScreenState extends State<ConversionScreen> {
         padding: const EdgeInsets.all(15.0),
         child: Column(
           children: [
+            SizedBox(height: 20.0),
             TextField(
               controller: _kmController,
               keyboardType: TextInputType.number,
@@ -41,7 +42,7 @@ class _ConversionScreenState extends State<ConversionScreen> {
                 _convertKmToMile();
               },
             ),
-            SizedBox(height: 20.0),
+            SizedBox(height: 30.0),
             TextField(
               controller: _mileController,
               keyboardType: TextInputType.number,

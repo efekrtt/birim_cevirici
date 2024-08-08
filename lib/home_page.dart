@@ -13,8 +13,9 @@ class HomePage extends StatelessWidget {
       appBar: buildAppBar('Ana Sayfa'),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
+            SizedBox(height: 60),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 backgroundColor: Color.fromARGB(255, 5, 133, 47),
@@ -115,7 +116,8 @@ class HomePage extends StatelessWidget {
                   fontSize: 18, // Yazı boyutunu burada ayarlayın
                 ),
               ),
-            ), // Diğer dönüştürme butonlarını buraya ekleyebilirsiniz.
+            ),
+            // Diğer dönüştürme butonlarını buraya ekleyebilirsiniz.
           ],
         ),
       ),
