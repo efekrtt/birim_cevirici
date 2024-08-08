@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'mile2km.dart';
+import 'mile2km_screen.dart';
 import 'app_bar.dart';
+import 'weight_conversion_screen.dart';
+import 'gallon2liter_screen.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -33,10 +35,27 @@ class HomePage extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => ConversionScreen()),
+                  MaterialPageRoute(
+                      builder: (context) => WeightConversionScreen()),
                 );
               },
               child: Text('Ağırlık Dönüştürme'),
+            ),
+            SizedBox(height: 18),
+
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color.fromARGB(255, 117, 190, 226),
+                foregroundColor: Colors.white,
+              ),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => VolumeConversionScreen()),
+                );
+              },
+              child: Text('Hacim Dönüştürme'),
             )
             // Diğer dönüştürme butonlarını buraya ekleyebilirsiniz.
           ],
