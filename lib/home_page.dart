@@ -3,6 +3,7 @@ import 'mile2km_screen.dart';
 import 'app_bar.dart';
 import 'pound2kg_screen.dart'; // Dosya adını burada güncelledik
 import 'gallon2liter_screen.dart';
+import 'fahrenheit2celcius.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -89,7 +90,32 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
-            // Diğer dönüştürme butonlarını buraya ekleyebilirsiniz.
+            SizedBox(height: 30),
+
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Color.fromARGB(255, 5, 133, 47),
+                foregroundColor: Colors.white,
+                minimumSize: Size(250, 50), // Boyutu burada ayarlayın
+                shape: RoundedRectangleBorder(
+                  borderRadius:
+                      BorderRadius.circular(8), // Yuvarlaklığı burada ayarlayın
+                ),
+              ),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => TemperatureConversionScreen()),
+                );
+              },
+              child: Text(
+                'Sıcaklık Dönüştürme',
+                style: TextStyle(
+                  fontSize: 18, // Yazı boyutunu burada ayarlayın
+                ),
+              ),
+            ), // Diğer dönüştürme butonlarını buraya ekleyebilirsiniz.
           ],
         ),
       ),
